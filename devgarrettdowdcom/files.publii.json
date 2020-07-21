@@ -1,0 +1,157 @@
+[
+    {
+        "path": "404.html",
+        "type": "file",
+        "md5": "02e936aa4d87ae37a90060ed0c713c9c"
+    },
+    {
+        "path": "assets",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/css",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/css/editor.css",
+        "type": "file",
+        "md5": "4202808df745f2ac7ab250606fa0d272"
+    },
+    {
+        "path": "/assets/css/main.css",
+        "type": "file",
+        "md5": "3723af0ed16b7d7368193b2fca23132c"
+    },
+    {
+        "path": "/assets/css/photoswipe.css",
+        "type": "file",
+        "md5": "7331f6eb15671b2fc8e3ffd46e849f7b"
+    },
+    {
+        "path": "/assets/css/style.css",
+        "type": "file",
+        "md5": "cc87cb8806c844f0646558fe70d5c5d1"
+    },
+    {
+        "path": "assets/js",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/js/lazysizes.min.js",
+        "type": "file",
+        "md5": "6a69d476c93de2b78a72acb259abccea"
+    },
+    {
+        "path": "/assets/js/ls.parent-fit.min.js",
+        "type": "file",
+        "md5": "f8467455ea5c88e3e51a4f212d2632bd"
+    },
+    {
+        "path": "/assets/js/photoswipe-ui-default.min.js",
+        "type": "file",
+        "md5": "aafb02c13ce2b295ff34a8ac0db67cbb"
+    },
+    {
+        "path": "/assets/js/photoswipe.min.js",
+        "type": "file",
+        "md5": "9c62086e50d89a9b6a29389a70ee0d65"
+    },
+    {
+        "path": "/assets/js/scripts.js",
+        "type": "file",
+        "md5": "b00814b406ac7700d941b23e08c545b0"
+    },
+    {
+        "path": "/assets/js/scripts.min.js",
+        "type": "file",
+        "md5": "205f40927e4a45297a0b266e50ad78d5"
+    },
+    {
+        "path": "/assets/js/svg-fix.js",
+        "type": "file",
+        "md5": "9b7d020c55e2b4f77ab40c97f88f9ff4"
+    },
+    {
+        "path": "/assets/js/svg2js.js",
+        "type": "file",
+        "md5": "2edce17568ef29c308f3d0e28c9c7a06"
+    },
+    {
+        "path": "assets/svg",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/svg/gallery-icons-dark.svg",
+        "type": "file",
+        "md5": "b40f17fabcda1519011795fa715c5751"
+    },
+    {
+        "path": "/assets/svg/gallery-icons-light.svg",
+        "type": "file",
+        "md5": "ae5b8ffffb37a64a9be016441a42d939"
+    },
+    {
+        "path": "/assets/svg/search.svg",
+        "type": "file",
+        "md5": "a5bb83b82b98f41b359f20dbf9db6e44"
+    },
+    {
+        "path": "/assets/svg/svg-map.svg",
+        "type": "file",
+        "md5": "63bac2a8e88021dd997efbd9d8271be2"
+    },
+    {
+        "path": "authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "feed.json",
+        "type": "file",
+        "md5": "1c060fcdb07f9d99fc3339338d017604"
+    },
+    {
+        "path": "feed.xml",
+        "type": "file",
+        "md5": "b1685b69c4d40531f932a48ce80cc3a4"
+    },
+    {
+        "path": "index.html",
+        "type": "file",
+        "md5": "9126ea75207bf6d69c69c93066ff8b0e"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/files",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "search.html",
+        "type": "file",
+        "md5": "f34d36f93f4be1d30581962522b36d2b"
+    },
+    {
+        "path": "sitemap.xml",
+        "type": "file",
+        "md5": "4f43294141d470e172cf90257ba56333"
+    },
+    {
+        "path": "sitemap.xsl",
+        "type": "file",
+        "md5": "03c2f9a7fdcc46ff05c435907614a0b8"
+    }
+]
