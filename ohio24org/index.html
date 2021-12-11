@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ohio24.org</title>
+  <meta name="description" content="Ohio24 is the premier ultra-cycling event in the Midwest. A 300+ mile, one-way trip across Ohio in less than 24 hours.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="icon" href="image/favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Lato|Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/d619ef5997.js"></script>
+  <script language=javascript>
+      var EML = "hi"
+      var EMLH1 = "ohio24."
+      var EMLH2 = "org"
+  </script>
+  <meta name="theme-color" content="#fc7233">
+  <link rel='icon' type='image/svg+xml' href='favicon.svg'>
+  <link rel='alternate icon' href='favicon.png' type='image/png'>
+
+</head>
+
+
+<body>
+  <!-- Light/Dark mode theming button -->
+  <div class="container">
+    <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+  </div>
+
+  <img class="logo" src="logo-s.png" alt="Ohio24 Logo" width="256" height="256">
+
+  <div class="center-block">
+		<section id="banner">
+			<p><garrett>Ohio</garrett><smallSpace> </smallSpace><dowd>24</dowd></p>
+		</section>
+	  <hr>
+    <div id="about" class="about">
+      <div class="about-1">
+  	    <p>The premier ultra-cycling event in the Midwest.</p>
+  	  </div>
+      <div class="about-2">
+  	    <p>300+ miles. 3 major cities.</p>
+  	  </div>
+      <div class="about-3">
+  	    <p>Under 24 hours.</p>
+  	  </div>
+    </div>
+  </div> <!-- /center-block -->
+
+    <div id="more">
+     <button class="button" onclick="myFunction()">Details</button>
+     <button class="button" onclick="window.location.href='https://forms.gle/ESZqGzUivwr4eVMF6';">Apply</button>
+  </div> <!-- /more button -->
+
+  <div id="morestuff" style="display: none;">
+    <div id="bio">
+      <p class="bio bio-1">The most important competition is the one the you fight within yourself. This event is about pushing your own limits and helping others to do the same.</p>
+
+      <p class="bio bio-2">Ohio provides the perfect environment for novice and experienced ultra-cyclists alike to push their limits. Relatively flat and temperate, Ohio can be traversed from Cincinatti to Cleveland almost entirely on bike trail via the Ohio to Erie Trail.</p>
+
+      <p class="bio bio-3">The inagural Ohio24 event is being planned for late Spring 2022. Taking cues from randonneuring, this event will provide just enough support to make a sub-24 hour time feasible. The route will be at least 500 kilometers and pass through Cincinatti, Columbus, and Cleveland. Participants must apply. Volunteers are welcome.</p>
+
+      <p class="bio bio-3">Are you ready to conquer Ohio in 24 hours or less?</p>
+    </div> 
+
+    <div id="morecontactlinks" class="contactlinks">
+    <!-- <a href="https://www.vimeo.com/garrettdowd/" class="fa fa-vimeo fa-3x"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    </div> <!-- /contactlinks -->
+  </div> <!-- /morestuff -->
+
+  <div id="contactlinks" class="contactlinks">
+  <!--   <a href="https://www.github.com/garrettdowd" class="fa fa-github fa-3x"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    <a href="https://www.instagram.com/ohio24ride/" class="fa fa-instagram fa-3x"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <script> document.write("<a href=" + "mail" + "to:" + EML + "@" + EMLH1 + EMLH2 + "></a>") </script>
+  </div> <!-- contactlinks -->
+
+
+  <script>
+    // function to set a given theme/color-scheme
+    function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+    }// function to toggle between light and dark theme
+    function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark'){
+          setTheme('theme-light');
+        } else {
+          setTheme('theme-dark');
+        }
+    }// Immediately invoked function to set the theme on initial load
+    (function () {
+      setTheme('theme-dark');
+      // if (localStorage.getItem('theme') === 'theme-dark') {
+      //   setTheme('theme-dark');
+      // } else {
+      //   setTheme('theme-light');
+      // }
+    })();
+    // function to show the more-info text and scroll the screen
+    function myFunction() {
+      var x = document.getElementById("morestuff");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        x.scrollIntoView();
+
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
