@@ -10,8 +10,8 @@
 }
 
 .theme-dark {
-        --theme-color-primary: #fdcb5c; /* orange */
-        --theme-color-primary-alt1: #d39611; /* dark orange */
+        --theme-color-primary: #fdcb5c; /* yellow */
+        --theme-color-primary-alt1: #d39611; /* dark yellow */
         --theme-color-secondary: #4d4d4d; /* dark-grey */
         --theme-color-secondary-alt1: #8f8f8f; /* light grey */
         --theme-color-secondary-opposite: #fff; /* white */
