@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Ohio24",
+    "description": "",
+    "home_page_url": "https://info.ohio24.org",
+    "feed_url": "https://info.ohio24.org/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Ohio24"
+    },
+    "items": [
+        {
+            "id": "https://info.ohio24.org/ohio24-route.html",
+            "url": "https://info.ohio24.org/ohio24-route.html",
+            "title": "Ohio24 Route",
+            "summary": "Highlights 315 miles, 500+ kilometersflat, less than 6000ft total elevation gain 90% trail",
+            "content_html": "\n    <h2 id=\"highlights\">\n      Highlights\n    </h2>\n\n  <ul>\n    <li>315 miles, 500+ kilometers</li><li>flat, less than 6000ft total elevation gain<br></li><li>90% trail</li>\n  </ul>",
+            "author": {
+                "name": "Ohio24"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-10-27T18:48:26-04:00",
+            "date_modified": "2022-10-27T18:48:26-04:00"
+        }
+    ]
+}
