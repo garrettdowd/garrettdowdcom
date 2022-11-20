@@ -222,6 +222,10 @@ hr {
     -o-animation: fadein 1s ease-in-out 2.1s forwards; /* Opera */
 }
 
+.cta {
+    text-align: center;
+}
+
 .contactlinks {
     margin-top: 10px;
     margin-bottom: 20px;
