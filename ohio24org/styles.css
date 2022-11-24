@@ -10,11 +10,11 @@
 }
 
 .theme-dark {
-        --theme-color-primary: #fdcb5c; /* yellow */
-        --theme-color-primary-alt1: #d39611; /* dark yellow */
-        --theme-color-secondary: #4d4d4d; /* dark-grey */
-        --theme-color-secondary-alt1: #8f8f8f; /* light grey */
-        --theme-color-secondary-opposite: #fff; /* white */
+    --theme-color-primary: #fdcb5c; /* yellow */
+    --theme-color-primary-alt1: #d39611; /* dark yellow */
+    --theme-color-secondary: #4d4d4d; /* dark-grey */
+    --theme-color-secondary-alt1: #8f8f8f; /* light grey */
+    --theme-color-secondary-opposite: #fff; /* white */
 }
 
 /* Logo */
@@ -26,33 +26,33 @@
 
 /********* Everything Else *********/
 html {
-  background-color: var(--theme-color-secondary);
-  background-position: center top;
-  background-size: cover;
-  /*text-transform: uppercase;*/
-  scroll-behavior: smooth;
+    background-color: var(--theme-color-secondary);
+    background-position: center top;
+    background-size: cover;
+    /*text-transform: uppercase;*/
+    scroll-behavior: smooth;
 }
 garrett, b {
-  text-transform: uppercase;
-  color: var(--theme-color-primary);
-  font-weight: 400;
-  letter-spacing: 10px;
-  font-weight: 400;
+    text-transform: uppercase;
+    color: var(--theme-color-primary);
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-weight: 400;
 }
 dowd, b {
-  text-transform: uppercase;
-  color: var(--theme-color-secondary-opposite);
-  letter-spacing: 4px;
-  font-weight: 700;
+    text-transform: uppercase;
+    color: var(--theme-color-secondary-opposite);
+    letter-spacing: 4px;
+    font-weight: 700;
 }
 smallSpace, b {
     font-size: 6px;
     letter-spacing: 2px;
 }
 .center-block {
-  margin: auto;
-  width: 80%;
-  padding: 10px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
 }
 .center-block a {
     text-decoration: none;
@@ -60,7 +60,7 @@ smallSpace, b {
 }
 a:hover {
   	color: #da244a;
-	cursor: pointer;
+	  cursor: pointer;
 }
 
 .logo {
@@ -135,12 +135,13 @@ hr {
     -o-animation: fadein 2s ease-in-out 1.2s forwards; /* Opera */
 }
 
+
 #more {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 15px;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: #fff;
     letter-spacing: 2px;
     opacity: 0;
@@ -224,11 +225,12 @@ hr {
 
 .cta {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .contactlinks {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     font-size: 15px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -249,6 +251,16 @@ hr {
 }
 .contactlinks a:active, .contactlinks a:hover {
     color: var(--theme-color-primary);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  color: var( --theme-color-secondary-alt1);
+  text-align: center;
 }
 
 

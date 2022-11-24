@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="icon" href="image/favicon.ico" />
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Lato|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bf2f610cbc.js" crossorigin="anonymous"></script>
   <script language=javascript>
       var EML = "hi"
@@ -33,7 +33,7 @@
         </label>
   </div>
 
-  <img class="logo" src="logo-s.png" alt="Ohio24 Logo" width="256" height="256">
+  <img class="logo" src="logo-s.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Ohio24 Logo" width="256" height="256">
 
   <div class="center-block">
 		<section id="banner">
@@ -54,17 +54,17 @@
   </div> <!-- /center-block -->
 
     <div id="more">
-     <button class="button" onclick="myFunction()">More</button>
+     <button id="morebtn" class="button" onclick="myFunction()">More</button>
      <!-- <button class="button" onclick="window.location.href='https://forms.gle/ESZqGzUivwr4eVMF6';">Apply</button> -->
   </div> <!-- /more button -->
 
   <div id="morestuff" style="display: none;">
     <div id="bio">
-      <p class="bio bio-1">Ohio provides the perfect environment for novice and experienced ultra-cyclists alike to push their limits. Relatively flat and temperate, Ohio can be traversed from Cincinatti to Cleveland almost entirely (90%) on bike trail via the Ohio to Erie Trail (OTET).</p>
+      <p class="bio bio-1">Ohio provides the perfect environment for novice and experienced ultra-distance cyclists alike to push their limits. Relatively flat and temperate, Ohio can be traversed from Cincinnati to Cleveland almost entirely (90%) on bike trail via the Ohio to Erie Trail (OTET).</p>
 
-      <p class="bio bio-2">Ohio24 is a point-to-point cycling challenge that can be tackled solo or with friends at any time. The route is a minimum of 500 kilometers and traverses Ohio through Cincinnati, Columbus, and Cleveland using most of the OTET. The challenge is to complete the route in less than 24 hours. This challenge can also be attempted as part of an organized annual summer solstice event.</p>
+      <p class="bio bio-2">Ohio24 is a point-to-point cycling challenge to traverse Ohio in less than 24 hours, mostly using the OTET. The official route is 500+ kilometers and passes through Cincinnati, Columbus, Akron, and Cleveland. The challenge can be attempted solo or with friends at any time. Don't want to ride 500+ kilometers alone? Think about joining the 2023 solstice event!</p>
 
-      <p class="bio bio-3">Are you ready to conquer Ohio24? Click below to learn more.</p>
+      <p class="bio bio-3">Click below to start your journey.</p>
 
       <div id="cta" class="bio bio-3 cta">
         <button class="button" onclick="window.location.href='https://info.ohio24.org/challenge';">The Challenge</button>
@@ -72,18 +72,6 @@
       </div>
       
     </div> 
-
-    <div id="morecontactlinks" class="contactlinks">
-      <!--
-      Info/pics from previous events
-      Application Requirements
-      Accepted riders Info (not on website)
-        Route
-        Timeline
-        Equipment -->
-    <!-- <a href="https://www." class="fa fa-vimeo fa-3x"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-    </div> <!-- /contactlinks -->
   </div> <!-- /morestuff -->
 
   <div id="contactlinks" class="contactlinks">
@@ -93,6 +81,10 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <script> document.write("<a href=" + "mail" + "to:" + EML + "@" + EMLH1 + EMLH2 + "></a>") </script>
   </div> <!-- contactlinks -->
+
+  <div id="footer" class="footer">
+    <p> Copyright 2022 Ohio24</p>
+  </div>
 
 
   <script>
@@ -126,6 +118,15 @@
       } else {
         x.style.display = "none";
       }
+      var y = document.getElementById("morebtn");
+      if (y.innerText == 'More') y.innerText = 'Less';
+      else y.innerText = 'More';
+    }
+    function hover(element) {
+      element.setAttribute('src', 'logo-s-a.gif');
+    }
+    function unhover(element) {
+      element.setAttribute('src', 'logo-s.png');
     }
   </script>
 </body>
