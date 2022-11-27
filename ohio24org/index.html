@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>ohio24.org</title>
-  <meta property="og:title" content="Ohio24. The premier ultra-cycling event in the Midwest.">
-  <meta name="description" content="Ohio24 is the premier ultra-cycling event in the Midwest. A 300+ mile, one-way trip across Ohio in less than 24 hours.">
+  <meta property="og:title" content="Ohio24. The premier ultra distance cycling challenge in the Midwest.">
+  <meta name="description" content="Ohio24 is the premier ultra distance cycling challenge in the Midwest. A 300+ mile, one-way trip across Ohio in less than 24 hours.">
   <meta property="og:description" content="A 300+ mile, one-way trip across Ohio in less than 24 hours.">
   <meta property="og:image" content="https://ohio24.org/logo-l.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="icon" href="image/favicon.ico" />
+  <link rel="shortcut icon" type="icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bf2f610cbc.js" crossorigin="anonymous"></script>
@@ -18,9 +18,8 @@
       var EMLH2 = "org"
   </script>
   <meta name="theme-color" content="#fdcb5c">
-  <link rel='icon' type='image/png' href='favicon.png'>
-  <link rel='alternate icon' href='favicon.png' type='image/png'>
-
+  <link rel='icon' type='image/png' href='assets/favicon.png'>
+  <link rel='alternate icon' type='image/png' href='assets/favicon.png'>
 </head>
 
 
@@ -33,58 +32,73 @@
         </label>
   </div>
 
-  <img class="logo" src="logo-s.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Ohio24 Logo" width="256" height="256">
-
-  <div class="center-block">
-		<section id="banner">
-			<p><garrett>Ohio</garrett><smallSpace> </smallSpace><dowd>24</dowd></p>
-		</section>
-	  <hr>
-    <div id="about" class="about">
-      <div class="about-1">
-  	    <p>The premier ultra-cycling challenge in the Midwest.</p>
-  	  </div>
-      <div class="about-2">
-  	    <p>300+ miles. 3 major cities.</p>
-  	  </div>
-      <div class="about-3">
-  	    <p>Under 24 hours.</p>
-  	  </div>
+  <div id="scroll-logo" class="scroll-motion">
+    <canvas id="hero-logo" ></canvas>
+    <div id="scroll-arrows">
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
     </div>
-  </div> <!-- /center-block -->
-
-    <div id="more">
-     <button id="morebtn" class="button" onclick="myFunction()">More</button>
-     <!-- <button class="button" onclick="window.location.href='https://forms.gle/ESZqGzUivwr4eVMF6';">Apply</button> -->
-  </div> <!-- /more button -->
-
-  <div id="morestuff" style="display: none;">
-    <div id="bio">
-      <p class="bio bio-1">Ohio provides the perfect environment for novice and experienced ultra-distance cyclists alike to push their limits. Relatively flat and temperate, Ohio can be traversed from Cincinnati to Cleveland almost entirely (90%) on bike trail via the Ohio to Erie Trail (OTET).</p>
-
-      <p class="bio bio-2">Ohio24 is a point-to-point cycling challenge to traverse Ohio in less than 24 hours, mostly using the OTET. The official route is 500+ kilometers and passes through Cincinnati, Columbus, Akron, and Cleveland. The challenge can be attempted solo or with friends at any time. Don't want to ride 500+ kilometers alone? Think about joining the 2023 solstice event!</p>
-
-      <p class="bio bio-3">Click below to start your journey.</p>
-
-      <div id="cta" class="bio bio-3 cta">
-        <button class="button" onclick="window.location.href='https://info.ohio24.org/challenge';">The Challenge</button>
-        <button class="button" onclick="window.location.href='https://info.ohio24.org/solstice-event';">Solstice Event</button>
-      </div>
-      
-    </div> 
-  </div> <!-- /morestuff -->
-
-  <div id="contactlinks" class="contactlinks">
-  <!--   <a href="https://www." class="fa fa-github fa-3x"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-    <a href="https://www.instagram.com/ohio24ride/" class="fab fa-instagram fa-3x"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <script> document.write("<a href=" + "mail" + "to:" + EML + "@" + EMLH1 + EMLH2 + "></a>") </script>
-  </div> <!-- contactlinks -->
-
-  <div id="footer" class="footer">
-    <p> Copyright 2022 Ohio24</p>
   </div>
+
+  <div id="main">
+    <img class="logo" src="assets/logo-s.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Ohio24 Logo" width="256" height="256">
+
+    <div class="center-block">
+      <section id="banner">
+        <p><ohio1>Ohio</ohio1><smallSpace> </smallSpace><ohio2>24</ohio2></p>
+      </section>
+      <hr>
+      <div id="about" class="about">
+        <div class="about-1">
+          <p>The premier ultra distance cycling challenge in the Midwest.</p>
+        </div>
+        <div class="about-2">
+          <p>300+ miles. 3 major cities.</p>
+        </div>
+        <div class="about-3">
+          <p>Under 24 hours.</p>
+        </div>
+      </div>
+    </div> <!-- /center-block -->
+  
+      <div id="more">
+       <button id="morebtn" class="button" onclick="moreInfo()">More</button>
+       <!-- <button class="button" onclick="window.location.href='https://forms.gle/ESZqGzUivwr4eVMF6';">Apply</button> -->
+    </div> <!-- /more button -->
+  
+    <div id="morestuff" style="display: none;">
+      <div id="bio">
+        <p class="bio bio-1">Ohio provides the perfect environment for novice and experienced ultra-distance cyclists alike to push their limits. Relatively flat and temperate, Ohio can be traversed from Cincinnati to Cleveland almost entirely (90%) on bike trail via the Ohio to Erie Trail (OTET).</p>
+  
+        <p class="bio bio-2">Ohio24 is a point-to-point cycling challenge to traverse Ohio in less than 24 hours, mostly using the OTET. The official route is 500+ kilometers and passes through Cincinnati, Columbus, Akron, and Cleveland. The challenge can be attempted solo or with friends at any time. Don't want to ride that far alone? Think about joining the 2023 solstice event!</p>
+  
+        <p class="bio bio-3">Click below to start your journey.</p>
+  
+        <div id="cta" class="bio bio-3 cta">
+          <button class="button" onclick="window.location.href='https://info.ohio24.org/challenge';">The Challenge</button>
+          <button class="button" onclick="window.location.href='https://info.ohio24.org/solstice-event';">Solstice Event</button>
+        </div>
+        
+      </div> 
+    </div> <!-- /morestuff -->
+  
+    <div id="contactlinks" class="contactlinks">
+    <!--   <a href="https://www." class="fa fa-github fa-3x"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+      <a href="https://www.instagram.com/ohio24ride/" class="fab fa-instagram fa-3x"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <script> document.write("<a href=" + "mail" + "to:" + EML + "@" + EMLH1 + EMLH2 + "></a>") </script>
+    </div> <!-- contactlinks -->
+  
+    <div id="footer" class="footer">
+      <p><span>Copyright 2022 Ohio24.</span> <span>Designed by <a href="https://garrettdowd.com">Garrett Dowd</a></span></p>
+    </div>
+  </div>
+
+
 
 
   <script>
@@ -109,7 +123,7 @@
       // }
     })();
     // function to show the more-info text and scroll the screen
-    function myFunction() {
+    function moreInfo() {
       var x = document.getElementById("morestuff");
       if (x.style.display === "none") {
         x.style.display = "block";
@@ -123,11 +137,80 @@
       else y.innerText = 'More';
     }
     function hover(element) {
-      element.setAttribute('src', 'logo-s-a.gif');
+      element.setAttribute('src', 'assets/logo-s-a.gif');
     }
     function unhover(element) {
-      element.setAttribute('src', 'logo-s.png');
+      element.setAttribute('src', 'assets/logo-s.png');
     }
+    
+    // Hero Logo Scroll Animation
+    // https://css-tricks.com/lets-make-one-of-those-fancy-scrolling-animations-used-on-apple-product-pages/
+    const page = document.documentElement;
+    const scrollContainer = document.querySelector("#scroll-logo");
+    const canvas = document.getElementById("hero-logo");
+    const context = canvas.getContext("2d");
+    const arrows = document.getElementById("scroll-arrows");
+
+    // How many images are in the sequence
+    const frameCount = 25;
+    // generate filepath for a given frame index
+    const currentFrame = index => (
+        // file naming format is _a_00.png, _a_01.png, etc
+        `assets/_a_${index.toString().padStart(2, '0')}.png`
+    )
+
+    // Preload all images to prevent images being requested/loaded during animation which would cause flickering
+    const preloadImages = () => {
+        for (let i = 0; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+        }
+    };
+
+    // setup the canvas and draw the first image
+    const img = new Image()
+    img.src = currentFrame(1);
+    canvas.width=256;
+    canvas.height=256;
+    img.onload=function(){
+        context.drawImage(img, 0, 0);
+    }
+    // clear the canvas (needed for transparent images) and draw the next frame
+    const updateImage = index => {
+        img.src = currentFrame(index);
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(img, 0, 0);
+    }
+    // make decisions based on scroll position
+    window.addEventListener('scroll', () => {  
+        const scrollTop = page.scrollTop; // in this case the scroll position references the top of the html document
+        const maxScrollTop = scrollContainer.scrollHeight - window.innerHeight; // stop scrolling when the end of the container is reached
+        const scrollPercent = scrollTop / maxScrollTop; // get percent of container scrolled through
+        // calculate frame index based on scroll position
+        const frameIndex = Math.max(0, // prevent index from going negative
+            Math.min(
+                frameCount - 1,
+                Math.ceil(scrollPercent * frameCount)
+            )
+        );
+        // fade out canvas between 100% and 150% of scrollPercent (y = -2x + 3)
+        const opacity = -2 * scrollPercent + 3
+        canvas.style.opacity = opacity
+        if (scrollPercent > 1.5) {
+          canvas.style.display = "none"
+        } else {
+          canvas.style.display = "block"
+        }
+
+        if (scrollPercent > 1.2) { // once user scrolls to end of scrollContainer
+            // remove scroll arrows
+            arrows.style.display = "none";
+        }
+        requestAnimationFrame(() => updateImage(frameIndex))
+    });
+
+    preloadImages()
+    // [End] Hero Logo Scroll Animation
   </script>
 </body>
 </html>
