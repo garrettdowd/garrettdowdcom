@@ -39,6 +39,8 @@
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            <rect id="svg-clickbox" width="100" height="100"
+            onclick="doScrolling('#main', 2000)"/>
         </svg>
     </div>
   </div>
@@ -94,7 +96,7 @@
     </div> <!-- contactlinks -->
   
     <div id="footer" class="footer">
-      <p><span>Copyright 2022 Ohio24.</span> <span>Designed by <a href="https://garrettdowd.com">Garrett Dowd</a></span></p>
+      <p><span>Copyright 2024 Ohio24.</span> <span>Designed by <a href="https://garrettdowd.com">Garrett Dowd</a></span></p>
     </div>
   </div>
 
@@ -122,6 +124,45 @@
       //   setTheme('theme-light');
       // }
     })();
+
+// Slow Scroll Hero Logo On Click
+    function getElementY(query) {
+      return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
+    }
+
+    function doScrolling(element, duration) {
+      var startingY = window.pageYOffset
+      var elementY = getElementY(element)
+      // If element is close to page's bottom then window will scroll only to some position above the element.
+      var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
+      var diff = targetY - startingY
+      // Easing function: easeInOutCubic
+      // From: https://gist.github.com/gre/1650294
+      var easing = function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 }
+      var start
+
+      if (!diff) return
+
+      // Bootstrap our animation - it will get called right before next frame shall be rendered.
+      window.requestAnimationFrame(function step(timestamp) {
+        if (!start) start = timestamp
+        // Elapsed miliseconds since start of scrolling.
+        var time = timestamp - start
+        // Get percent of completion in range [0, 1].
+        var percent = Math.min(time / duration, 1)
+        // Apply the easing.
+        // It can cause bad-looking slow frames in browser performance tool, so be careful.
+        percent = easing(percent)
+
+        window.scrollTo(0, startingY + diff * percent)
+
+        // Proceed with animation as long as we wanted it to.
+        if (time < duration) {
+          window.requestAnimationFrame(step)
+        }
+      })
+    }
+
     // function to show the more-info text and scroll the screen
     function moreInfo() {
       var x = document.getElementById("morestuff");

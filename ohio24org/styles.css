@@ -382,6 +382,7 @@ input:checked + .slider:before {
     left: 50%;
     margin-left: -30px;
     bottom: 20px;
+    cursor: pointer;
 }
 .arrows path {
     stroke: var(--theme-color-primary);
@@ -415,6 +416,10 @@ input:checked + .slider:before {
 .arrows path.a3 {	
     animation-delay:0s;
     -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+#svg-clickbox {
+    opacity: 0;
 }
 
 
